@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/bootstarp/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/super-classes.css">
+      <link rel="stylesheet" href="assets/css/custom-style.css">
+      <link rel="stylesheet" href="assets/css/mobile.css">
+      <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+       <link rel="icon" href="img/Logo.png" type="image/x-icon" />
+   <title>Book Now - Global Events & Studios</title>
+   <style>
+      #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ed1650;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #fd7e14;;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ed1650;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {background-color: #fff;color: #ed1650;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:25px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media  (min-width : 300px) and (max-width : 1000px){
+.packages img{
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+
+}
+
+.captcha {
+            display: flex;
+            align-items: center;
+        }
+        .captcha img {
+            margin-right: 10px;
+        }
+
+
+   </style>
+</head>
+
+<body>
+  
+   <!--navbar-->
+   <!--navbar-->
+   <div class="w-100 float-left header-con">
+      <div class="container" style="max-width: 1250px;">
+         <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <a class="navbar-brand" href="index.html"> 
+               <img src="img/Logo Gold .png" alt="img">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active pl-lg-0">
+                     <a class="nav-link p-0" href="index.html" style="font-weight: 600;">HOME <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <div class="dropdown">
+                        <a class="nav-link p-0" href="#" style="font-weight: 600;">ABOUT</a>
+                             <div class="dropdown-content">
+                                <a href="about.html">About Us</a>
+                             <a href="who.html">Who We Are</a>
+                             <a href="why.html">Why Choose Us</a>
+                             <a href="team.html">How We Work</a>
+                              </div>
+                        
+                   </li>
+                  <li class="nav-item">
+                     <a class="nav-link p-0" href="serices.html" style="font-weight: 600;">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link p-0" href="videos.html" style="font-weight: 600;">VIDEOS</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link p-0" href="gallery.html" style="font-weight: 600;">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link p-0" href="live.html" style="font-weight: 600;">LIVE</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link p-0" href="contact.html" style="font-weight: 600;">CONTACT US</a>
+                  </li>
+               </ul>
+               <div class="generic-button white-btn d-inline-block wow ">
+                  <a href="book.html"
+                   style="font-weight: 600;">Book Now<i class="fa fa-angle-right"></i></a>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </div>
+   <!--navbar-->
+   <!--banner-->
+   <section class="sub-banner-sec generic-banner w-100 float-left d-table position-relative">
+    <div class="d-table-cell align-middle">
+       <div class="container">
+          <div class="banner-inner-con text-white text-center wow bounceInUp" data-wow-duration="2s">
+             
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb d-inline-block">
+                  <li class="breadcrumb-item d-inline-block"><a class="text-white" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active d-inline-block" aria-current="page">Book Now</li>
+                  </ol>
+              </nav>
+            </div>
+         </div>
+      </div>
+   </section>
+ <!--banner-->
+  <!--contact-sec-->
+  <section class="contact-main-sec w-100 float-left padding-top padding-bottom">
+   <div class="container">
+      <div class="generic-title text-center wow bounceInUp" data-wow-duration="2s" style="padding-bottom: 30px;">
+         <h2>Let’s Make Your Wedding a Wonderful Story</h2>
+         
+      </div>
+      <div class="row" style="background: white;padding: 60px;">
+       
+         <div class="col-md-12">
+            <form method="post" action="#" onsubmit="return validateForm() && validateCaptcha()">
+               <div class="form-row">
+                   <div class="col">
+                       <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                   </div>
+                   <div class="col">
+                       <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone" required>
+                   </div>
+               </div>
+               <div class="form-row" style="margin-top: 30px">
+                   <div class="col">
+                       <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+                   </div>
+                   <div class="col">
+                       <input type="text" class="form-control" id="datepicker" placeholder="Event Date" name="date" required>
+                   </div>
+               </div>
+               <div class="form-row" style="margin-top: 30px">
+                   <div class="col">
+                       <input type="text" class="form-control" placeholder="Wedding / Event" name="event" required>
+                   </div>
+                   <div class="col">
+                       <input type="text" class="form-control" placeholder="Venue / City" name="venue" required>
+                   </div>
+               </div>
+               <div class="form-row" style="margin-top: 30px">
+                   <div class="col">
+                       <input type="text" class="form-control" placeholder="Wedding Venue / Mandapam Name" name="mandapam" required>
+                   </div>
+                   <div class="col">
+                       <select class="form-control" required name="packages">
+                           <option value="">Select Packages</option>
+                           <option value="Wedding Package - Rs 70,0000">Wedding Package - Rs 70,0000</option>
+                       </select>
+                   </div>
+               </div>
+               
+               <div class="form-row" style="margin-top: 30px">
+                  <div class="col-md-6">
+                      <input type="text" class="form-control" id="captcha-input" placeholder="Enter Captcha" required>
+                      <input type="hidden" id="hidden-captcha">
+                  </div>
+              </div>
+
+               <div class="form-row" style="margin-top: 20px">
+                   <div class="col captcha">
+                       <span id="captcha-code" style="font-size: 20px; font-weight: 600;margin-right: 10px;"></span>
+                       <button type="button" onclick="generateCaptcha()" style="padding: 5px;border-radius: 5px;border: 0px;font-size: 15px;">Refresh</button>
+                   </div>
+               </div>
+              
+       
+               <div class="form-btn red-btn d-inline-block" style="margin-top: 25px">
+                   <button type="submit">Book Now<i class="fas fa-angle-right"></i></button>
+               </div>
+           </form>
+         </div>
+      
+      </div>
+   </div>
+</section>
+<!--contact-sec-->
+  
+  
+   
+               
+   
+   
+   <!--footer-sec-->
+   <section class="footer-main-sec w-100 float-left padding-top position-relative">
+      <div class="container">
+         <div class="form-sec d-flex align-items-center">
+            <h3 class="mb-0" style="font-size: 20px;font-weight: 100;">Let’s make your event a wonderful celebration.You can draft an email to us on 
+               </h3>
+            
+            <div class="form-btn red-btn d-inline-block">
+               <button  type="submit">globalfxevents@gmail.com<i class="fas fa-envelope"></i></button>
+            </div>
+         </div>
+         <div class="footer-inner-sec">
+            <ul class="list-unstyled text-center">
+               <li class="d-inline-block"><a class="text-white" href="index.html">HOME</a></li>
+               <li class="d-inline-block">
+                  <div class="dropdown">
+                     <a class="nav-link p-0" href="#" style="color: white;">ABOUT</a>
+                          <div class="dropdown-content">
+                             <a href="about.html">About Us</a>
+                           <a href="who.html">Who We Are</a>
+                          <a href="why.html">Why Choose Us</a>
+                          <a href="team.html">How We Work</a>
+                           </div>
+                     </div>
+                </li>
+               <li class="d-inline-block"><a class="text-white" href="serices.html">SERVICES</a></li>
+               <li class="d-inline-block"><a class="text-white" href="videos.html">VIDEOS</a></li>
+               <li class="d-inline-block"><a class="text-white" href="gallery.html">GALLERY</a></li>
+               <li class="d-inline-block"><a class="text-white" href="live.html">LIVE</a></li>
+               <li class="d-inline-block"><a class="text-white" href="faq.html">FAQ's</a></li>
+               <li class="d-inline-block"><a class="text-white" href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="footer-social-sec text-center">
+               <a href="index.html">
+                  <figure>
+                     <img src="img/Logo Gold .png" alt="Confrico">
+                  </figure>
+               </a>
+               <ul class="list-unstyled p-0">
+                  <li class="d-inline-block"><a class="d-inline-block" href="https://www.facebook.com/GlobalfxStudio/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  
+                 
+                  <li class="d-inline-block"><a class="d-inline-block" href="https://www.instagram.com/iam_seenus/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                 
+               </ul>
+               <span class="text-white d-inline-block">Copyright © 2023 Global Events & Studios. All Rights Reserved. Designed by <a href="https://covenanttecs.com/" target="_blank" style="color: white;">Covenant Technologies</a></span>
+            </div>
+         </div>
+         <!--form-sec-->
+
+      </div>
+   </section>
+   <!--footer-sec-->
+
+   <a href="https://api.whatsapp.com/send?phone=12345" class="float" target="_blank">
+      <i class="fa-brands fa-whatsapp my-float"></i>
+      </a>
+      
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+   <script src="assets/js/jquery-3.6.0.min.js"></script>
+   <!-- <script src="assets/js/jquery-3.2.1.slim.min.js"></script> -->
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/owl.carousel.min.js"></script>
+   <script src="assets/js/custom.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+
+<script>
+   // Get the button
+   let mybutton = document.getElementById("myBtn");
+   
+   // When the user scrolls down 20px from the top of the document, show the button
+   window.onscroll = function() {scrollFunction()};
+   
+   function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       mybutton.style.display = "block";
+     } else {
+       mybutton.style.display = "none";
+     }
+   }
+   
+   // When the user clicks on the button, scroll to the top of the document
+   function topFunction() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+   }
+   </script>
+
+   <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+  <script>
+        function validateForm() {
+            // Get values from the form
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            const name = document.getElementById("name").value.trim();
+
+            // Regular expressions for validation
+            const phoneRegex = /^\d{10}$/;  // Assumes a 10-digit phone number
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const urlRegex = /(http|https):\/\/[^\s]+/; // Matches URLs
+
+            // Validate name character limit
+            if (name.length > 15) {
+               alert("Name must not exceed 15 characters.");
+               return false;
+            }
+
+            if (email.length > 25) {
+               alert("Email must not exceed 25 characters.");
+               return false;
+            }
+
+            // Validate phone number
+            if (!phoneRegex.test(phone)) {
+               alert("Please enter a valid 10-digit phone number.");
+               return false;
+            }
+
+             // Validate message character limit
+            if (message.length > 50) {
+               alert("Message must not exceed 50 characters.");
+               return false;
+            }
+
+            // Validate message content (no URLs)
+            if (urlRegex.test(message)) {
+               alert("Message cannot contain URLs. Please enter text only.");
+               return false;
+            }
+
+            // If everything is valid, the form can be submitted
+            return true;
+        }
+
+        function generateCaptcha() {
+       var captcha = '';
+       var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+       var charactersLength = characters.length;
+       for (var i = 0; i < 6; i++) {
+           captcha += characters.charAt(Math.floor(Math.random() * charactersLength));
+       }
+       document.getElementById('captcha-code').innerHTML = captcha;
+       document.getElementById('hidden-captcha').value = captcha;
+   }
+
+   function validateCaptcha() {
+       var enteredCaptcha = document.getElementById('captcha-input').value;
+       var generatedCaptcha = document.getElementById('hidden-captcha').value;
+       if (enteredCaptcha === generatedCaptcha) {
+           return true;
+       } else {
+           alert('Captcha does not match. Please try again.');
+           generateCaptcha(); // Refresh the CAPTCHA
+           return false;
+       }
+   }
+
+   window.onload = function() {
+       generateCaptcha();
+   }
+    </script>
+ 
+</body>
+
+
+<!-- Mirrored from html.designingmedia.com/confrico/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Nov 2023 07:58:49 GMT -->
+</html>
